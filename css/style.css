@@ -1,0 +1,15 @@
+#animation {
+  width: 400px
+  height: 300px
+  background-color:;
+  background-image: url();
+}
+
+#animation {
+  animation-duration: 3s
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+
+}
