@@ -1,53 +1,20 @@
-#animation {
-  width: 400px;
-  height: 300px;
-  background-color: white;
-  background-repeat: no-repeat;
-  background-image: url('../img/sprite.png');
-}
-
-#animation {
-  animation-duration: 3s
-  animation-timing-function: linear;
-  animation-delay: 0;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-name: ;
-}
 @keyframes row1 {
-
    0% {
-
       background-position: 0 0;
-
    }
-
-
 
    100% {
-
-      background-position: -12000px ;
-
+      background-position: -12000px 0;
    }
-
 }
-
-
 
 @keyframes row2 {
-
-   0% {
-
+    0% {
       background-position: 0 -300px;
-
    }
 
-
-
    100% {
-
       background-position: -12000px -300px;
-
    }
 
 }
@@ -55,19 +22,26 @@
 
 
 @keyframes row3 {
-
    0% {
-
-      background-position: 0 -px;
-
-   }
-
-
-
-   100% {
-
-      background-position: -500px -250px;
+     background-position: 0 -600px;
 
    }
 
+ 100% {
+      background-position: -12000px -600px;
+   }
+}
+#animation {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  background-image: url('../img/sprite.png');
+  background-repeat: no-repeat;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation:
+    row1 6s steps(30) 0s none, /* Do not delay the first animation */
+    row2 6s steps(30) 6s none,  /* Wait 1s for the first animation to run its course before running this anim */
+    row3 6s steps(30) 12s none;
 }
