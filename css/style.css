@@ -41,7 +41,7 @@
   animation-direction: alternate;
   animation-fill-mode: forwards;
   animation:
-    row1 6s steps(30) 0s none, /* Do not delay the first animation */
-    row2 6s steps(30) 6s none,  /* Wait 1s for the first animation to run its course before running this anim */
-    row3 6s steps(30) 12s none;
+    row1 10s steps(30) 0s none, /* Do not delay the first animation */
+    row2 10s steps(30) 10s none,  /* Wait 1s for the first animation to run its course before running this anim */
+    row3 10s steps(30) 20s none;
 }
