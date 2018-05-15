@@ -38,7 +38,7 @@
   background-image: url('../img/sprite.png');
   background-repeat: no-repeat;
   animation-timing-function: ease;
-  animation-direction: alternate;
+  animation-direction: forwards;
   animation-fill-mode: forwards;
   animation:
     row1 10s steps(30) 0s none, /* Do not delay the first animation */
