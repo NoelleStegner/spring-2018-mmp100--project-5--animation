@@ -19,8 +19,6 @@
 
 }
 
-
-
 @keyframes row3 {
    0% {
      background-position: 0 -600px;
@@ -36,12 +34,10 @@
   height: 300px;
   background-color: white;
   background-image: url('../img/sprite.png');
-  background-repeat: no-repeat;
-  animation-timing-function: ease;
-  animation-direction: forwards;
-  animation-fill-mode: forwards;
   animation:
-    row1 10s steps(30) 0s none, /* Do not delay the first animation */
-    row2 10s steps(30) 10s none,  /* Wait 1s for the first animation to run its course before running this anim */
-    row3 10s steps(30) 20s none;
+    10s steps(30) 0s none row1, /* Do not delay the first animation */
+    10s steps(30) 10s none row2,   /* Wait 1s for the first animation to run its course before running this anim */
+    10s steps(30) 20s none row3;
+
+
 }
